@@ -1,78 +1,42 @@
-# Getting Started with Create React App: BE SURE TO HAVE NODE AND NPX, NPM, or YARN INSTALLED IN ORDER TO RUN REACT
-Creating an App!!!
-You’ll need to have Node 10.16.0 or later version on your local development machine (but it’s not required on the server). We recommend using the latest LTS version. You can use nvm (macOS/Linux) or nvm-windows to switch Node versions between different projects.
+# Github React Skeleton Documentation
 
-To create a new app, you may choose one of the following methods:
+https://docs.google.com/document/d/1ppQ1fpGBaqmdkRiba8dO6UyhJTYX8IN43_MWA-V10FE/edit?usp=sharing
 
-NPX:
---
-npx create-react-app my-app
-(npx is a package runner tool that comes with npm 5.2+ and higher, see instructions for older npm versions)
+## Overview: 
+A guide on how to easily set up a git repository of a react web application. The gh-react-skeleton is a repo we’ve made in hopes of an easier start to creating a react project with github. 
 
-NPM:
---
-npm init react-app my-app
-npm init <initializer> is available in npm 6+
+## Requirements: 
+Before we start creating our project, there are a few things we must download onto your computer in order to create a react environment. 
+Node.js: https://nodejs.org/en/ 
+Git must be installed, follow this documentation on how to install git onto your device: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git	
+To check if the to packages we need are successfully installed in your home directory of your terminal (mac), or git bash terminal (Windows) run these commands:
+	node --version
+	npm --version
+	npx --version
+They should each output the version number.
 
-YARN:
---
-yarn create react-app my-app
-yarn create <starter-kit-package> is available in Yarn 0.25+
+## Setting Up the React Environment and Creating Your Git Repository: 
+In github create a new repository: DON’T add a readme, .gitignore, or license to the repo.
+In the home directory of your computer's terminal (mac) / git bash (Windows) run the command:
+                `` mkdir my-app
+                   cd my-app ``
+This line of code makes a folder called my-app and then we want to enter the folder so we “cd” into it.
+Next we want to initialize git in this directory we are in. To do that type: 
+                `` git init `` 
+We will now add an upstream and an origin to remote. The upstream will be the github repo we want to clone (the club repo: gh-react-skeleton), and the origin will be the github repo you made in step 1. 
+                `` git remote add upstream https://github.com/bhassan6621/react-gh-skeleton.git
+                  git remote add origin https://{your-github-repo-url} ``
+The first line sets the upstream to the club repo
+In the second line the url that needs to be pasted after “origin” is from the github repo you’ve made. 
 
-It will create a directory called my-app inside the current folder.
-Inside that directory, it will generate the initial project structure and install the transitive dependencies:
+Next line in the terminal gets the code from the club’s repo:
+                `` git pull https://github.com/bhassan6621/react-gh-skeleton.git main ``
+Then to push the code into your repo we type:
+                  `` git pull origin master ``
 
-my-app
-├── README.md
-├── node_modules
-├── package.json
-├── .gitignore
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── App.css
-    ├── App.js
-    ├── App.test.js
-    ├── index.css
-    ├── index.js
-    ├── logo.svg
-    └── serviceWorker.js
-    └── setupTests.js
-No configuration or complicated folder structures, only the files you need to build your app.
-Once the installation is done, you can open your project folder:
 
-cd my-app
-Inside the newly created project, you can run some built-in commands:
+## Refresh your github repository on github and you will see your new react web app all set up :)) 
 
-npm start or yarn start
-Runs the app in development mode.
-Open http://localhost:3000 to view it in the browser.
-
-------------------------------------------------------------------------------------------------------------------------------------
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+/ * To make a react project and push it to github on your own these are some helpful websites to follow along: 
+https://github.com/facebook/create-react-app
+https://github.com/gitname/react-gh-pages    */
